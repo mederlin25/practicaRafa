@@ -1,0 +1,103 @@
+/* Estilo para el contenedor principal */
+.container {
+    max-width: 400px; /* Reducimos el ancho del contenedor */
+    margin: 20px auto; /* Centramos el contenedor en la página */
+    padding: 20px;
+    background-color: #fff; /* Color de fondo blanco */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para los formularios */
+form {
+    text-align: center; /* Centramos los elementos del formulario */
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="number"] {
+    width: 100%; /* Ancho completo por defecto */
+    max-width: 300px; /* Ancho máximo para los campos de entrada */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Incluimos el padding y border en el ancho total */
+}
+/* Estilo para los botones */
+button {
+    display: block; /* Convertimos el botón en un bloque para centrarlo */
+    margin: 0 auto; /* Centramos el botón */
+    background-color: #0099ff; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0099ff; /* Color de fondo azul oscuro al pasar el ratón */
+}
+
+/* Estilo para los títulos */
+h1 {
+    color: #333; /* Color de título negro */
+    margin-bottom: 20px;
+}
+
+/* Estilo para los formularios */
+form {
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Color de texto negro */
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #0099ff; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0099ff; /* Color de fondo azul oscuro al pasar el ratón */
+}
+
+/* Estilo para las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilo para las celdas de la tabla */
+table th,
+table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para las celdas de encabezado de la tabla */
+table th {
+    background-color: #0099ff; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+}
