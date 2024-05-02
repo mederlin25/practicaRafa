@@ -36,12 +36,10 @@
         <?php
         include_once 'config.php';
 
-        
         $sql = "SELECT * FROM Usuarios";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
-            
             while($row = $result->fetch_assoc()) {
                 echo "<tr>";
                 echo "<td>" . $row['Id'] . "</td>";
@@ -54,7 +52,11 @@
                 echo "<td>";
                 echo "<form action='actualizar.php' method='post'>";
                 echo "<input type='hidden' name='id' value='" . $row['Id'] . "'>";
-                echo "<input type='text' name='nuevo_telefono' placeholder='Nuevo teléfono'>";
+                echo "<input type='text' name='nombre' placeholder='Nuevo nombre'><br>";
+                echo "<input type='email' name='email' placeholder='Nuevo email'><br>";
+                echo "<input type='password' name='contraseña' placeholder='Nueva contraseña'><br>";
+                echo "<input type='text' name='direccion' placeholder='Nueva dirección'><br>";
+                echo "<input type='tel' name='telefono' placeholder='Nuevo teléfono'><br>";
                 echo "<input type='submit' value='Actualizar'>";
                 echo "</form>";
                 echo "<form action='borrar.php' method='post'>";
